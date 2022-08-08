@@ -35,3 +35,5 @@ git commands :
     :- switch branch
     cmd :- git checkout <branch_name>
 
+    :- push a branch to your remote repository
+    cmd :- git push origin <branch_name>
