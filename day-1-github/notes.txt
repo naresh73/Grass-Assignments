@@ -1,0 +1,37 @@
+git commands :
+
+1. git clone :- clone a repository to selected address
+        cmd :- git clone <url>
+
+2. git add :- Add a 1 file to the staging area
+        cmd :- git add <file_path>
+           :- for adding all changes and files at once
+        cmd :- git add .
+
+3. git commit :- commited the changes
+        cmd :- git commit -m "<commit message>"
+
+4. git push :- push changes to repository
+        cmd :- git push
+
+5. git rm :- remove a file or folder
+        cmd :- git rm -r <file_name.txt>
+
+5. git log :- view changes
+        cmd :- git log
+
+6. git init :- creates a new Git repository
+        cmd :- git init <repository_name>
+
+7. git status :- using this command we can know the state of the working directory
+        cmd :- git status
+
+8. git branch :- show all the branches which is present in repository
+        cmd :- git branch
+
+    :- create a new branch
+    cmd :- git branch <brnach_name>
+
+    :- switch branch
+    cmd :- git checkout <branch_name>
+
