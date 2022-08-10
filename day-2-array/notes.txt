@@ -1,0 +1,4 @@
+Array - Array is a group of element
+    - If you have a list of item we can store them in a single variables.
+    - Array index start with 0 to size - 1.
+    - the full array can be accessed by referring to the array name.
