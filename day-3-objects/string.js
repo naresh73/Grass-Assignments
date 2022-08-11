@@ -14,5 +14,11 @@ console.log(UserName.toLowerCase());
 let message = "          Hello World            "
 console.log(message.trim());
 
-console.log(UserName.split(""));
+let Arr = UserName.split(" ");
+console.log(Arr);
+console.log(Arr.length);
+
+let emptystr = "";
+console.log(emptystr.concat(UserName));
+
 
