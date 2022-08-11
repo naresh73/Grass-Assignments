@@ -1,0 +1,8 @@
+var - var declarations are global scope
+    - var can be re-declared and updated
+
+let - let is a block scope
+    - let can be updated but not re-declared
+
+const - const are block scope
+      - const cannot be updated or re-declared
