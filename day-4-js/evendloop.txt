@@ -1,0 +1,6 @@
+Event Loop - 
+
+javascript is a single thread programming language it means that javascript can do only one thing at a single point in time.
+the event loop is the secret behing javascript's asynchronous programming.
+the event loop has one simple job - to monitor the call stack and callback queue
+if the call stack is empty, then the evel loop will take the first event from the event queue and will push it to the call stack.
