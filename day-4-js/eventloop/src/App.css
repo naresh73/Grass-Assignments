@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+.flex-container{
+  background-color: red;
+  border: 5px black solid;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  height: 70px;
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.box-container{
+  background-color: darkgreen;
+  border: 5px black solid;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  height: 70px;
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
