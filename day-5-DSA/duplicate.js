@@ -12,3 +12,4 @@ function removeDuplicate(arr) {
 }
 
 removeDuplicate(id);
+module.exports = {removeDuplicate};
