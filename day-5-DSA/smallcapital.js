@@ -1,5 +1,3 @@
-let latter = ['A','y','Z','a','B','b','r','u'];
-
 //this function will separate latters in capital & small
 function smallCapitalLatter(arr) {
     let capiatlLatter = [];
@@ -16,5 +14,4 @@ function smallCapitalLatter(arr) {
     console.log(smallLatter);
 }
 
-smallCapitalLatter(latter)
 module.exports = {smallCapitalLatter};
