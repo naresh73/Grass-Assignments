@@ -1,5 +1,3 @@
-const id = [10,23,45,67,10,67,455,231];
-
 //this fuction will remove repeat element from array
 function removeDuplicate(arr) {
     const result = [];
@@ -11,5 +9,4 @@ function removeDuplicate(arr) {
     console.log(result);
 }
 
-removeDuplicate(id);
 module.exports = {removeDuplicate};
