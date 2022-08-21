@@ -17,3 +17,4 @@ function EvenOdd(arr) {
 }
 
 EvenOdd(digits);
+module.exports = {EvenOdd};
