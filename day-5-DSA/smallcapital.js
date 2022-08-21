@@ -17,3 +17,4 @@ function smallCapitalLatter(arr) {
 }
 
 smallCapitalLatter(latter)
+module.exports = {smallCapitalLatter};
