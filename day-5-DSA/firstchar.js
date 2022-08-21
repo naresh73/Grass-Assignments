@@ -1,5 +1,3 @@
-const languages = ['JavaScript','python','c','C++','java','SQL'];
-
 //this function will separate array's element's first char
 function checkFirstchar(arr) {
     let capitalChar = [];
@@ -23,4 +21,4 @@ function checkFirstchar(arr) {
     }
 }
 
-checkFirstchar(languages)
+module.exports = { checkFirstchar };
