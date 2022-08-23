@@ -1,0 +1,96 @@
+.maindiv{
+  background-color: rgb(50, 33, 33);
+  display: flex;
+  padding: 50px 150px 50px 150px;
+}
+
+h1{
+  color: rgb(0, 136, 255);
+}
+.stack{
+  border-width: 10px;
+  border-style: inset;
+  text-align: center;
+  width: 30%;
+}
+
+.eventloop{
+  color: aliceblue;
+  text-align: center;
+  border-color: rgb(255, 255, 255);
+  border-style: dashed;
+  border-radius: 50%;
+  height: 150px;
+  margin: 50px 200px 50px 200px;
+}
+.queue{
+  width: 30%;
+  border-width: 10px;
+  border-style: inset;
+  text-align: center;
+}
+
+.queue .async{
+  margin-top: 330px;
+}
+
+.queue .async2{
+  background-color: rgb(19, 238, 139);
+  /* margin-top: 200px; */
+}
+p{
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  border-style: groove;
+}
+
+.async{
+  background-color: rgb(19, 238, 139);
+}
+
+.function{
+  margin-top: 50px;
+  width: 100%;  
+
+} 
+
+.clock{
+  position: absolute;
+  top: 69%;
+  left: 70%;
+  transform:translate(-50%,-50%);
+  font-size:35px;
+  width:1em;
+  height:1em;
+  line-height:1.2;
+  overflow:hidden;
+}
+
+.clock2{
+  position: absolute;
+  top: 83%;
+  left: 70%;
+  transform:translate(-50%,-50%);
+  font-size:35px;
+  width:1em;
+  height:1em;
+  line-height:1.2;
+  overflow:hidden;
+}
+
+
+.cl{
+  animation:clock 1.2s steps(12, end) infinite;
+  display: inline-block;
+}
+@keyframes clock{
+  0%{
+    transform:translateY(0);
+  }
+  100%{
+    transform:translateY(-14.4em);
+  }
+}
