@@ -4,12 +4,13 @@
     "mongoose": "^6.5.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "name": "day-10-mongo-db",
   "version": "1.0.0",
   "main": "server.js",
   "author": "naresh",
   "license": "ISC",
-  "description": "mongoDB"
+  "description": "mongoDB",
+  "devDependencies": {}
 }

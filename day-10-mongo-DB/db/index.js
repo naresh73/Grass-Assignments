@@ -1,11 +1,12 @@
-const mongoose = require("mongoose");
-const MONGO_DB_URL = 'mongodb+srv://naresh73:1430128@cluster0.s4xfmpv.mongodb.net/?retryWrites=true&w=majority';
+const myMONGOOSE = require('mongoose');
 
-const db = async () => {
-    mongoose.connect(MONGO_DB_URL, (err) => {
-      if (err) throw err;
-      console.log("Connected To MongoDB Database");
-    });
-  };
+const mongoDB_URL = "mongodb+srv://naresh73:1430128@cluster0.s4xfmpv.mongodb.net/?retryWrites=true&w=majority";
 
-module.exports = db;
+const connectToDB = async() => {
+  myMONGOOSE.connect(mongoDB_URL, (urlError) => {
+    if(urlError) throw urlError;
+    console.log("You are successfully conected to mongoDB database");
+  });
+};
+
+module.exports = connectToDB;
