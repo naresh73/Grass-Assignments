@@ -1,0 +1,34 @@
+asynchronous function :- async functions take a particular time to run
+                       - async function can be identified by the following keywords - 
+                            async-await,
+                            interval time,
+                            promise-based behaviour (.then , .catch) 
+
+
+API's :-
+
+get - getting data from database
+post - store new data in database
+put - edit data in database (replace/overlap new data)
+delete - delete specific data in database
+patch - update only specific data which is required
+
+
+
+
+
+
+
+Express JS:- express js is node js web application framewrok that provides  broad features for building web and
+               mobile applications.
+          :- it it used to build a single page, multi page and hybrid web applications.
+          :- It's a layer build on the top of the node js  that helps manage servers and routes.     
+
+Routes - PATH url of any page which represent data.
+       - Route is everthing.
+       - We define a particular page on a particular route we send the data on that particular page.
+          we can see that data using that route.
+
+server - the task of a web server is to open a file on the server and retrun the content to the client.
+
+package.json - in this we store our all dependencies (app depend on something called dependency).
