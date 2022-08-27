@@ -9,7 +9,7 @@ const SportSchema = new mongoose.Schema({
         type: Number,
         default:1,
         validate(numOfplayer) {
-            if (numOfplayer < 1) throw new console.error('Number of player cannot be minimum to 1');
+            if (numOfplayer < 1) throw new console.error('Number of player atleast 1');
         },
     },
 });
