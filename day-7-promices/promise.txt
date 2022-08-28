@@ -1,0 +1,16 @@
+Promise - An action which will either be resolved or rejected.
+ 
+ - A promise is a proxy for a value not necessarily known when the promise is created. it allow you to associate
+ handlers with an ansychrounous actions eventual success value or failure reason
+
+ - This lets asynchronous methods retrun value like asynchronous methods .Instead of immediately returning the final value.
+ The asynchronous method returns a promise to supply the value at some point in the future.
+
+
+               -------->> A Promise is in one of these states <<----------      
+
+        => Pending - Initial state (Neither fulfilled nor rejected).
+
+        => Fulfilled / Resolved - Operation was completed successfully.
+
+        => Rejected - Operation failed.
