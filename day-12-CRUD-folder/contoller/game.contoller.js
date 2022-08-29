@@ -27,4 +27,24 @@ exports.createGameGet = async function (req,res) {
     }
 };
  
- 
+exports.createGamePut = async function (req,res) {
+    console.log(req.params);
+    try {
+      await GameModel.findByIdAndUpdate(req.params.id, req.body);
+      res.send("Data updated->>>>>>>>>>>>>>>");
+    } catch (error) {
+      res.send(error.message);
+    }
+    res.send("OK")
+  };
+
+
+exports.createGameDelete = async function (req, res) {
+    console.log(req.params);
+    try {
+        await GameModel.findByIdAndDelete(req.params.id);
+        res.send("Data deleted successfully->>>>>>>>>>>>>>>>");
+    } catch (error) {
+        res.send(error);
+    }
+}  
