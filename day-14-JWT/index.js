@@ -1,5 +1,5 @@
 const express = require('express');
-const App = express();
+const app = express();
 const PORT = 4000;
 const JWT = require('jsonwebtoken');
 const Secret = "secret";
@@ -16,37 +16,37 @@ function generateJWTtoken(userName) {
     )
 }
 
-function authenticateToken(request, result, next) {
+function authenticateToken(request, response, next) {
     const authHeader = request.headers["authorization"];
     console.log(authHeader);
 
     const token = authHeader.split(' ')[1];
-    if(token === null) return result.send("no token found");
+    if (token === null) return response.send("no token found");
 
-    const decodeToken = JWT.verify(token, Secret);
-    console.log(decodeToken);
-    //     if(err) {
-    //         result.send({Error: err});
-    //     }
+    JWT.verify(token, Secret, (err, user) => {
+        if (err) {
+            response.send({ Error: err });
+        }
 
-    //     request.body.user = user;
-    // });
+        return request.body.user = user;
+        // console.log(user);
+    });
     next();
 }
 
 console.log(generateJWTtoken("naresh"));
 
-App.use(express.json());
+app.use(express.json());
 
-App.post('/token', (request, result) => {
-                    //middleware function
+app.post('/token', (request, response) => {
+    //middleware function
     const JWTtoken = generateJWTtoken(request.body.name);
-    result.json(JWTtoken);
+    response.json(JWTtoken);
 })
 
-App.post('/verify', authenticateToken, (request, result) => {
-    result.json("Token is verified");
+app.post('/verify', authenticateToken, (request, response) => {
+    response.json("Token is verified");
 
 })
 
-App.listen(PORT, console.log("server is listening on PORT", PORT));
+app.listen(PORT, console.log("server is listening on PORT", PORT));
