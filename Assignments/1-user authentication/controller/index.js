@@ -1,7 +1,7 @@
 const userModel = require('../model/index');
-// const generateJWTtoken = requ    ire('../middleware')
+// const jwt = require('../middleware/index')
 
-async function userGet(request, response) {
+async function InformationOfUser(request, response) {
     const collectionOfUsers = await userModel.find({});
     try { 
         response.send(collectionOfUsers);
@@ -10,23 +10,23 @@ async function userGet(request, response) {
     }
 }
 
-async function userPost(request, response) {
+async function CreateUser(request, response) {
     const NewUser = new userModel(request.body);
-    // const jwt = generateJWTtoken(request.body.userName);
+    // const token = jwt.generateToken("sahmdfsjfjsgyh");
+    // console.log(token);
     try {
         await NewUser.save();
+        
         response.send({
             message: "user added successfully",
             student_description: NewUser
-            // token: jwt
-        
         })
     } catch (error) {
         response.send({message: error.message});
     }
 }
 
-async function userPut(request, response) {
+async function EditUser(request, response) {
     try {
         await userModel.findByIdAndUpdate(request.params.id, request.body);
         response.send("user data updated successfully->>>>>>>>>>>>>>>");
@@ -35,7 +35,7 @@ async function userPut(request, response) {
     }
 }
 
-async function userDelete(request, response) {
+async function DeleteUser(request, response) {
     try {
         await userModel.findByIdAndDelete(request.params.id);
         response.send("user data deleted successfully->>>>>>>>>>>>>>>");
@@ -44,4 +44,4 @@ async function userDelete(request, response) {
     }
 }
 
-module.exports = { userGet, userPost, userPut, userDelete } ;
+module.exports = { InformationOfUser, CreateUser, EditUser, DeleteUser } ;
